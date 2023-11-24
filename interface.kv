@@ -1,0 +1,107 @@
+WindowManager:
+    MainWindow:
+
+<MainWindow>:
+
+    name: "main"
+
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: root.size
+            source: "Background.png"
+
+    BoxLayout:
+
+        orientation: 'vertical'
+        spacing: 10
+        padding: 30
+
+        Button:
+            reference_link: 'https://drive.google.com/drive/folders/1gmFuGD2GHvjYy_s7Ew7gt7gCzz74CC39'
+            text:
+            size_hint: 0.6, 0.6,
+            pos_hint: {'x':.22, 'y':.2}
+            background_color: (.0,.0,.0,0)
+            on_press: root.open_link(self.reference_link)
+            on_release: root.button_off()
+            Image:
+                id: my_image
+                source: 'komandir_button.png'
+                center_x: self.parent.center_x - 110
+                center_y: self.parent.center_y + 10
+                size: self.parent.width, self.parent.height
+
+
+
+
+        Button:
+            text: 'Сделать фото'
+            size_hint: 0.6, 0.6,
+            pos_hint: {'x':.22, 'y':.2}
+            background_color: (.0,.0,.0,0)
+            Image:
+                source: 'komissar.png'
+                center_x: self.parent.center_x - 110
+                center_y: self.parent.center_y + 10
+                size: self.parent.width, self.parent.height
+
+
+
+        Button:
+            text: 'Сделать фото'
+            size_hint: 0.6, 0.6,
+            pos_hint: {'x':.22, 'y':.2}
+            background_color: (.0,.0,.0,0)
+            Image:
+                source: 'master.png'
+                center_x: self.parent.center_x - 110
+                center_y: self.parent.center_y + 10
+                size: self.parent.width, self.parent.height
+
+
+        Button:
+            text: 'Сделать фото'
+            size_hint: 0.6, 0.6,
+            pos_hint: {'x':.22, 'y':.2}
+            background_color: (.0,.0,.0,0)
+            Image:
+                source: 'zhz.png'
+                center_x: self.parent.center_x - 110
+                center_y: self.parent.center_y + 10
+                size: self.parent.width, self.parent.height
+
+
+        Button:
+            text: 'Сделать фото'
+            size_hint: 0.6, 0.6,
+            pos_hint: {'x':.22, 'y':.2}
+            background_color: (.0,.0,.0,0)
+            Image:
+                source: 'pressa.png'
+                center_x: self.parent.center_x - 110
+                center_y: self.parent.center_y + 10
+                size: self.parent.width, self.parent.height
+
+        Button:
+            text: 'Сделать фото'
+            size_hint: 0.6, 0.6,
+            pos_hint: {'x':.22, 'y':.2}
+            background_color: (.0,.0,.0,0)
+            Image:
+                source: 'gitarist.png'
+                center_x: self.parent.center_x - 110
+                center_y: self.parent.center_y + 10
+                size: self.parent.width, self.parent.height
+
+
+        Button:
+            text: 'Сделать фото'
+            size_hint: 0.6, 0.6,
+            pos_hint: {'x':.22, 'y':.2}
+            background_color: (.0,.0,.0,0)
+            Image:
+                source: 'dj.png'
+                center_x: self.parent.center_x - 110
+                center_y: self.parent.center_y + 10
+                size: self.parent.width, self.parent.height
